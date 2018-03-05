@@ -1,4 +1,3 @@
-const RIPEMD160 = require('ripemd160');
 const crypto = require('crypto');
 
 /**
@@ -18,7 +17,8 @@ var Common = function () {
 
         var secretBuffer = crypto.randomBytes(32);
         var secret = secretBuffer.toString('hex');
-        var hashedSecret = new RIPEMD160().update(secretBuffer).digest('hex');
+        var hashedSecret = crypto.createHmac('sha256', secretBuffer)
+                                 .digest('hex');
 
         console.log("\nSecret:\t\t\t", secret);
         console.log("\Hashed Secret:\t\t", hashedSecret, "\n");

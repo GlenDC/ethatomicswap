@@ -8,7 +8,7 @@
             },
             {
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             },
             {
                 "name": "_initiator",
@@ -25,7 +25,7 @@
         "inputs": [
             {
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             }
         ],
         "name": "refund",
@@ -42,7 +42,7 @@
             },
             {
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             }
         ],
         "name": "redeem",
@@ -59,7 +59,7 @@
             },
             {
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             },
             {
                 "name": "_participant",
@@ -76,7 +76,7 @@
         "inputs": [
             {
                 "name": "",
-                "type": "bytes20"
+                "type": "bytes32"
             }
         ],
         "name": "swaps",
@@ -91,7 +91,7 @@
             },
             {
                 "name": "hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             },
             {
                 "name": "secret",
@@ -166,7 +166,7 @@
             {
                 "indexed": false,
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             },
             {
                 "indexed": false,
@@ -193,7 +193,7 @@
             {
                 "indexed": false,
                 "name": "_hashedSecret",
-                "type": "bytes20"
+                "type": "bytes32"
             },
             {
                 "indexed": false,
